@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Link } from "react-router-dom";
 export default function () {
   const [Mobile, setMobile] = React.useState("nav--mobile");
 
@@ -26,8 +27,13 @@ export default function () {
         </Col>
         <Col className="desktop--nav">
           <div className="nav--items">
-            <p>Home</p>
-            <p>Place to stay</p>
+            <Link className="home" to="/">
+              <p>Home</p>
+            </Link>
+
+            <Link className="placeToStay" to="/placetostay">
+              <p>Place to stay</p>
+            </Link>
             <p>NFTs</p>
             <p>Community</p>
           </div>
@@ -50,9 +56,19 @@ export default function () {
         <Col className={Mobile}>
           <hr />
           <ul>
-            <li>Home</li>
-            <li>Place to stay</li>
-            <li>NFTs</li>
+            <li>
+              <Link className="home--mobile" to="/">
+                <p>Home</p>
+              </Link>
+            </li>
+
+            <li>
+              <Link className="placeToStay--mobile" to="/placetostay">
+                <p>Place to stay</p>
+              </Link>
+            </li>
+
+            <li className="navitems--mobile--nfts">NFTs</li>
             <li>Community</li>
           </ul>
 

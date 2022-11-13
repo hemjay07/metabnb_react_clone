@@ -11,7 +11,6 @@ export default function Main() {
     let foo = <Card image={`./nftImages/nft${i}.svg`} key={`${i}`} />;
     NftCards.push(foo);
   }
-  console.log(NftCards);
   return (
     <>
       {" "}

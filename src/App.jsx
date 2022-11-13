@@ -1,15 +1,17 @@
-import { useState } from "react";
-import "./App.css";
-import Header from "../components/Header";
-import Main from "../components/Main";
-import Footer from "../components/Footer";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Connect from "../components/ConnectWallet";
+import Home from "./Home";
+import PlaceToStay from "./PlaceToStay";
 
 export default function App() {
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+    // <Connect />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/placetostay" element={<PlaceToStay />} />
+      </Routes>
+    </Router>
   );
 }
