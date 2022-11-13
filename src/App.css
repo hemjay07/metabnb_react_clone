@@ -8,42 +8,69 @@
   height: 32.19px;
 }
 
-nav {
-  display: flex;
+.navv {
   /* border: solid 3px #a02279; */
+  padding: 40px 0 30px 0;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 43px 80px;
 }
-
-nav > button {
-  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
-  border-radius: 10px;
-  border: none;
+.nav--items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* min-width: 500px; */
+  /* border: solid 3px #a02279; */
+  padding-top: 10px;
 }
-nav > p {
-  font-family: "Red Rose";
-  font-style: normal;
+.nav--items > p {
+  height: 25px;
+  align-self: center;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 25px;
+
   color: #434343;
 }
-
+.navv--button {
+  background-color: #a02279 !important;
+  border: none !important;
+  border-radius: 10px !important;
+}
+.nav--mobile {
+  display: none;
+}
+.navv--button--mobile {
+  /* margin-left: auto !important; */
+  background-color: #a02279 !important;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+  padding: 0 !important;
+  margin: 0;
+  font-size: 18px;
+  line-height: 35px;
+}
+.hamburger {
+  display: none;
+}
 .hero {
-  height: 80%;
+  width: 100%;
+  padding: 40px 20px;
+  /* height: 80%;wi */
   /* border: solid 3px #a02279; */
 }
 
-.main--section-1 {
-  /* border: solid 3px #a02279; */
+/* .main--section-1 {
 
   display: flex;
   gap: 64px;
   padding: 0 20px 0 80px;
   margin-top: 45px;
+} */
+.description {
+  /* border: solid 3px #a02279; */
+  padding: 20px 20px 60px 00px;
 }
-
 .description > p {
   margin-top: 30px;
   font-weight: 400;
@@ -108,17 +135,20 @@ nav > p {
   background-color: #a02279;
   display: flex;
   justify-content: space-around;
-  height: 50px;
+  height: 55px;
   align-items: center;
 }
 .divide > img {
   width: 214.14px;
   height: 30.56px;
+  /* padding: 10px; */
 }
 
 .inspiration {
+  /* border: solid 3px #a02279; */
+  justify-content: center;
   margin: 30px 0;
-  height: 60px;
+  padding-top: 50px;
   text-align: center;
   font-family: "Red Rose";
   font-style: normal;
@@ -126,13 +156,20 @@ nav > p {
   font-size: 48px;
   line-height: 60px;
 }
-
+.lost {
+  display: flex;
+  justify-content: space-between;
+}
 .card {
   padding: 10px;
-  width: 260px;
+  width: 100%;
+  border-radius: 15px !important;
 }
 .card > img {
   margin-bottom: 10px;
+}
+.bar {
+  margin-bottom: 15px;
 }
 .nft--info {
   display: flex;
@@ -142,7 +179,7 @@ nav > p {
   font-family: "Red Rose";
   font-style: normal;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 9.5px;
   line-height: 13px;
   color: #434343;
 }
@@ -151,4 +188,74 @@ nav > p {
 }
 .stars {
   width: 90px;
+}
+
+@media screen and (max-width: 540px) {
+  .divide > img {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .divide > img {
+    width: 87px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nft--info > p {
+    font-size: 12px;
+  }
+  .desktop--nav {
+    display: none;
+  }
+  .navv--button {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: inline-block;
+    /* border: solid 3px #a02279; */
+    /* width: 100px !important; */
+    /* height: 70px; */
+    margin-left: auto;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+/* section 3 */
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+.section--3 {
+  /* height: 774px; */
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  padding: 100px 0;
+  color: white;
+}
+
+.hero--2 {
+  width: 100%;
+  /* width: 150px; */
+}
+.learnmore {
+  background: linear-gradient(
+    124.4deg,
+    #ffffff 10.8%,
+    #ffffff 87.34%
+  ) !important;
+  border-radius: 8px !important;
+  color: #a02279 !important;
+  border: none !important;
+}
+.discover_nft {
+  padding: 20px 0;
+}
+
+/* footer */
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+.footer {
+  color: white;
+  background: #1d1d1e;
 }
