@@ -1,37 +1,64 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Form from "react-bootstrap/Form";
-
-import InputGroup from "react-bootstrap/InputGroup";
-
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 export default function () {
+  const [Mobile, setMobile] = React.useState("nav--mobile");
+
+  function handleclick() {
+    if (Mobile == "") {
+      setMobile("nav--mobile");
+    } else {
+      setMobile("");
+    }
+  }
   return (
-    <nav>
-      <div>
-        <img className="logo" src="/Group.svg" />
-      </div>
+    <Container>
+      <Row className="navv">
+        <Col xs="auto">
+          {" "}
+          <div className="lost">
+            {" "}
+            <img className="logo" src="/Group.svg" />
+          </div>
+        </Col>
+        <Col className="desktop--nav">
+          <div className="nav--items">
+            <p>Home</p>
+            <p>Place to stay</p>
+            <p>NFTs</p>
+            <p>Community</p>
+          </div>
+        </Col>
+        <Col xs="auto">
+          {" "}
+          <Button className="navv--button">conect wallet</Button>
+        </Col>
+        <Col xs="auto">
+          {" "}
+          <img
+            onClick={handleclick}
+            className="hamburger"
+            src="./hamburger.svg"
+            alt="menu"
+          />
+        </Col>
+      </Row>{" "}
+      <Row>
+        <Col className={Mobile}>
+          <hr />
+          <ul>
+            <li>Home</li>
+            <li>Place to stay</li>
+            <li>NFTs</li>
+            <li>Community</li>
+          </ul>
 
-      <p>Home</p>
-      <p>Place to stay</p>
-      <p>NFTs</p>
-      <p>Community</p>
-      <Button>conect wallet</Button>
-
-      {/* <InputGroup className="mb-3">
-        <Form.Control
-          placeholder="search for location"
-          aria-label="Recipient's username"
-          aria-describedby="basic-addon2"
-        />
-        <Button
-          className="bs-button"
-          variant="outline-secondary"
-          id="button-addon2"
-        >
-          Search
-        </Button>
-      </InputGroup> */}
-    </nav>
+          <Button className="navv--button--mobile">conect wallet</Button>
+        </Col>
+      </Row>
+    </Container>
   );
 }

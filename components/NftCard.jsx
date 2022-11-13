@@ -1,8 +1,11 @@
 import React from "react";
+// import { Container } from "react-bootstrap";
+import Col from "react-bootstrap/Col";
 
 export default function Card(prop) {
   return (
-    <>
+    <Col md={6} lg={3} className="bar">
+      {" "}
       <div className="card">
         {" "}
         <img src={prop.image} alt="nft card" />
@@ -18,6 +21,6 @@ export default function Card(prop) {
         </div>
         <img className="stars" src="./stars.svg" alt="" />{" "}
       </div>
-    </>
+    </Col>
   );
 }
