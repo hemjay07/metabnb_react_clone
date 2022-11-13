@@ -7,7 +7,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 export default function Main() {
   let NftCards = [];
-  for (let i = 1; i < 17; i++) {
+  for (let i = 1; i < 9; i++) {
     let foo = <Card image={`./nftImages/nft${i}.svg`} key={`${i}`} />;
     NftCards.push(foo);
   }

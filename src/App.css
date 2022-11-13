@@ -258,4 +258,35 @@ ul {
 .footer {
   color: white;
   background: #1d1d1e;
+  padding: 40px 0 10px 0;
+}
+.footer--logo {
+  width: 70%;
+  /* border: solid 3px #a02279; */
+}
+
+.footer--socials {
+  /* border: solid 3px #a02279; */
+  width: 60%;
+  margin: 110px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer--li {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 35px;
+  color: #f1f3f9;
+}
+.copyright {
+  width: 13px;
+}
+.baz {
+  margin-bottom: 55px;
+  font-size: 10px;
+}
+
+.footer--col {
+  padding-left: 45px !important;
 }
