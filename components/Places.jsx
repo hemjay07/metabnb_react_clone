@@ -7,7 +7,9 @@ import Col from "react-bootstrap/Col";
 export default function Places() {
   let NftCards = [];
   for (let i = 1; i < 17; i++) {
-    let foo = <Card image={`./nftImages/nft${i}.svg`} key={`${i}`} />;
+    let foo = (
+      <Card image={`./nftImagesPlaceToStay/nft${i}.svg`} key={`${i}`} />
+    );
     NftCards.push(foo);
   }
   return (
