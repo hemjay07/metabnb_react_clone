@@ -7,10 +7,14 @@ import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
 export default function () {
   const [Mobile, setMobile] = React.useState("nav--mobile");
+
+  // set state for modal and add a function which switches the state upon clicking the connect wallet button or exiting the modal
   const [modal, setModal] = React.useState(false);
   function handleModal() {
     setModal(!modal);
   }
+
+  //  when the hamburger is clicked this toggles the  nav for mobile view (toggle the className "nav--mobile" which basically changes the diplay to none)
   function handleclick() {
     if (Mobile == "") {
       setMobile("nav--mobile");
@@ -32,6 +36,7 @@ export default function () {
           <div className="lost">
             {" "}
             <img className="logo" src="/Group.svg" />
+            {/* if modal is "true", add the code for the modal pop up */}
             {modal && (
               <>
                 <div className="connect">
