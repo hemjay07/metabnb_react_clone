@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Connect from "../components/ConnectWallet";
+// import Connect from "../components/Modal";
 import Home from "./Home";
 import PlaceToStay from "./PlaceToStay";
 
@@ -14,4 +14,5 @@ export default function App() {
       </Routes>
     </Router>
   );
+  6;
 }
