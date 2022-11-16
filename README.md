@@ -6,7 +6,7 @@
 
 ### Links
 - Live Site URL: (https://metabnb-clone-hng3.netlify.app/)
-
+- Link to Figma design: (https://www.figma.com/file/atc36d5Cj9xJNupZALp9Tg/Metabnb-for-frontend?t=9ad4Imk07dFgoNna-0)
 
 ### Built With
 - React
